@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86e4d36e-4295-41c9-aa77-2f381e01eb7f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Listing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/Image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/aenean-vulputate.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/kilimanjaro.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/lorem-ipseum.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/mont-blanc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/northern-pakistan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/olympus-greece.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/patagonia.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/white.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/CardItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
-    </list>
+    <list default="true" id="86e4d36e-4295-41c9-aa77-2f381e01eb7f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Listing.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="125" column="33" selection-start-line="125" selection-start-column="33" selection-end-line="125" selection-end-column="33" />
+            <state relative-caret-position="257">
+              <caret line="123" column="10" lean-forward="true" selection-start-line="123" selection-start-column="10" selection-end-line="123" selection-end-column="10" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -207,16 +189,15 @@
       <updated>1632661533580</updated>
       <workItem from="1632661534886" duration="8472000" />
       <workItem from="1632699149637" duration="7388000" />
-      <workItem from="1632709184608" duration="2583000" />
+      <workItem from="1632709184608" duration="3330000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18443000" />
+    <option name="totallyTimeSpent" value="19190000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16577825" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -328,8 +309,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Listing.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="125" column="33" selection-start-line="125" selection-start-column="33" selection-end-line="125" selection-end-column="33" />
+        <state relative-caret-position="257">
+          <caret line="123" column="10" lean-forward="true" selection-start-line="123" selection-start-column="10" selection-end-line="123" selection-end-column="10" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
