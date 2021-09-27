@@ -13,6 +13,11 @@ import olympusgreece from './assets/olympus-greece.jpg';
 import patagonia from './assets/patagonia.jpg';
 import himalayas from './assets/Image.jpg';
 
+import greenBig from './assets/bg/Polygon3.svg';
+import purple from './assets/bg/Polygon2.svg';
+import gray from './assets/bg/Polygon4.svg';
+import greensmall from './assets/bg/Polygon5.svg';
+import graysmall from './assets/bg/Polygon6.svg';
 import Box from "@mui/material/Box";
 import _ from 'lodash'
 import {makeStyles} from "@material-ui/core";
@@ -41,11 +46,32 @@ const useStyles = makeStyles(theme =>({
         flexDirection:'column',
         justifyContent:'flex-start',
         alignItems:'flex-start',
-        overflow:'hidden'
+        overflow:'hidden',
+        backgroundImage: `url(${greensmall}),url(${graysmall}),url(${greenBig}),url(${purple}),url(${gray})`,
+        backgroundRepeat:  'no-repeat,no-repeat',
+        backgroundPosition:'0% 75%,27% 20%,90% 100%,73% 65%,100% 20%',
+        [theme.breakpoints.between('md','lg')]: {
+            fontSize:70,
+        },
+        [theme.breakpoints.down('md')]: {
+            fontSize:60,
+
+        },
+        [theme.breakpoints.down('xs')]: {
+            fontSize:292,
+            backgroundSize:'10%,8%,33%,27%,10%',
+            height:292,
+            paddingTop:28.08,
+            backgroundPosition:'-57% 10%,58% 21%,90% 72%,73% 65%,114% 20%;',
+        },
     },
     logo:{
       height: 27.71,
-      width:160,
+       width:160,
+        [theme.breakpoints.down('xs')]: {
+            height: 19.39,
+            width:'auto'
+        },
 
     },
     title:{
@@ -55,7 +81,17 @@ const useStyles = makeStyles(theme =>({
         fontStyle:'normal',
         letterSpacing: '0em',
         marginTop:87.57,
-        lineHeight: '1 !important'
+        lineHeight: '1 !important',
+        [theme.breakpoints.between('md','lg')]: {
+            fontSize:70,
+        },
+        [theme.breakpoints.down('md')]: {
+            fontSize:60,
+        },
+        [theme.breakpoints.down('xs')]: {
+            fontSize:32,
+            marginTop:52.61
+        },
     },
     subs:{
         fontSize: 24,
@@ -63,7 +99,20 @@ const useStyles = makeStyles(theme =>({
         fontWeight:400,
         color:'#FFFFFF',
         width:630,
-        marginTop: 28
+        marginTop: 28,
+        [theme.breakpoints.between('md','lg')]: {
+            fontSize:22,
+        },
+        [theme.breakpoints.down('md')]: {
+            fontSize:20,
+           width:'80%'
+        },
+        [theme.breakpoints.down('xs')]: {
+            fontSize:14,
+            width:210,
+            marginTop:8
+        },
+
     },
     filter:{
         marginTop:80,
