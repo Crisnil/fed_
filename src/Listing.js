@@ -27,8 +27,10 @@ import Typography from "@material-ui/core/Typography";
 import TextField from "@material-ui/core/TextField";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
 import Button from "@material-ui/core/Button";
-
-
+import SearchIcon from '@mui/icons-material/Search';
+import InputAdornment from "@material-ui/core/InputAdornment";
+import Input from "@material-ui/core/Input";
+import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles(theme =>({
     root:{
@@ -180,17 +182,32 @@ const useStyles = makeStyles(theme =>({
     footlogo:{
         height:23.9,
         width:160,
-        alignSelf:'center'
+        alignSelf:'center',
+        objectFit:'contain',
+        [theme.breakpoints.between('md','lg')]: {
+            fontSize:14              ,
+        },
+        [theme.breakpoints.down('md')]: {
+            height:'35%',
+        },
     },
     footnote:{
         fontSize:20,
-        color:'#fff'
-    }
+        color:'#fff',
+    },
+    [theme.breakpoints.between('md','lg')]: {
+        fontSize:12
+    },
+    [theme.breakpoints.down('xs')]: {
+        fontSize:10,
+    },
 }));
 
-function Listing() {
+function Listing(props) {
 
+    console.log(props)
     const classes = useStyles();
+    let history = useHistory();
     const [state,setState]=useState({data:[],loading:false,filters:"himalayas"});
 
     const getData=()=>{
@@ -214,12 +231,19 @@ function Listing() {
         getData()
     },[])
 
+    function goto(item){
+        return()=> {
+            console.log("te",item)
+            history.push(`/${item.slug}`)
+        }
+    }
 
     let imgs = [himalayas,kilimanjaro,loremipseum,aeneanvulputate,montblanc,northernpakistan,olympusgreece,patagonia]
+
     const childItems = state.data.map((item,x)=>{
         return(
             <Grid item xs={6} sm={4} md={3} key={x}>
-                <Paper elevation={0} >
+                <Paper elevation={0} onClick={goto(item)}>
                     <CardMedia
                         className={classes.img}
                         component="img"
@@ -249,7 +273,6 @@ function Listing() {
                             component="img"
                             alt="logo"
                             image= {logo}
-
                         />
                         <Typography gutterBottom  variant='subtitle1' component="div" className={classes.title}>
                             Mountains
@@ -266,7 +289,11 @@ function Listing() {
                       className={classes.filter}
                 >
                     <Grid item xs={12} sm={8} md={8} >
-                        <TextField id="outlined-basic" label="Search for mountains" variant="outlined" fullWidth />
+                        <TextField id="outlined-basic" placeholder="Search for mountains" variant="outlined" fullWidth
+                               InputProps={{
+                                   startAdornment: <InputAdornment position="start"><SearchIcon/></InputAdornment>,
+                               }}
+                        />
                     </Grid>
                 </Grid>
             </Container>
@@ -307,7 +334,7 @@ function Listing() {
                             image={logo}
 
                         />
-                        <Typography gutterBottom  variant='subtitle1' component="div" className={classes.footnote}>
+                        <Typography gutterBottom   variant="subtitle2" className={classes.footnote}>
                             Front-end developer test page – September 2021
                         </Typography>
                     </Container>
